@@ -6,7 +6,10 @@
   "scripts": {
     "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
     "build-local": "webpack --mode production",
-    "build-external": "webpack --config ./external/webpack.config.js"
+    "build-external": "webpack --config ./external/webpack.config.js --mode production",
+    "build-multi": "webpack --config ./multi-entry-points/webpack.config.js --mode production",
+    "build-css": "webpack --config ./css-style-loader/webpack.config.js --mode production",
+    "build-plugins": "webpack --config ./plugins/webpack.config.js --mode production"
   },
   "keywords": [
     "webpack"
@@ -14,6 +17,10 @@
   "author": "@mikef123",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^3.5.0",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.1.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
