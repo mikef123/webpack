@@ -1,3 +1,9 @@
 import '../css/styles.css'
+import text from './text'
 
-document.body.innerHTML = "<p>Hola mundo home</p>"
+
+if(module.hot) {
+    module.hot.accept('./text.js', function() {
+        text()
+    })
+}
