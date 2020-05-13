@@ -19,8 +19,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test:  /\.css$/,
-                use:'raw-loader',
+                test:  /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+                use:'url-loader',
+                exclude: /node_modules/,
+            },
+            {
+                test:  /\.js$/,
+                use:'babel-loader',
                 exclude: /node_modules/,
             },
             {
