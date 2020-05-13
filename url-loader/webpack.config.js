@@ -20,8 +20,12 @@ module.exports = {
         rules: [
             {
                 test:  /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-                use:'url-loader',
-                exclude: /node_modules/,
+                use: {
+                    loader:'url-loader',
+                    options: {
+                        limit: 90000,
+                    }
+                }
             },
             {
                 test:  /\.js$/,

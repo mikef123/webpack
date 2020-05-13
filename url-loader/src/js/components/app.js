@@ -1,6 +1,8 @@
 import  React, {useState} from 'react'
 import data from './data.json'
 import Loader from './loader'
+import logo from '../../images/platzi.png'
+import video from '../../video/que-es-core.mp4'
 
 export const App = () => {
     const [loaderList, setLoaderList] = useState([])
@@ -10,6 +12,10 @@ export const App = () => {
     return (
         <div>
             que linda aplicación hecha en React.js
+            <video src={video} width={360} controls poster={logo}></video>
+            <p>
+                <img src={logo} alt="" width={40}/>
+            </p>
         <ul>
             {
                 loaderList.map((item) => {
