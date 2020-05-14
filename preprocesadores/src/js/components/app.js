@@ -24,6 +24,9 @@ export const App = () => {
          <p className="stylus">
              esto es stylus
          </p>
+         <p className="post-css">
+             esto es postcss
+         </p>
             que linda aplicación hecha en React.js
             <video src={video} width={360} controls poster={logo}></video>
             <p>
