@@ -1,1 +1,1 @@
-console.log('Hola contacto');
+console.log('Hola mundo desde Webpack! contacto')

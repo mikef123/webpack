@@ -1,1 +1,1 @@
-console.log('Hola precios');
+console.log('Hola mundo desde Webpack! precios')

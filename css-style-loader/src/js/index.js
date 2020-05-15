@@ -1,3 +1,4 @@
-import '../css/styles.css'
+import '../css/index.css'
 
-document.body.innerHTML = "<p>Hola mundo home</p>"
+document.body.innerHTML = '<p>Hola mundo desde Webpack! home</p>'
+
